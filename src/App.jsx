@@ -161,7 +161,7 @@ function Lightbox({ project, onClose }) {
       onClick={onClose}
     >
       <motion.div
-        className="relative w-full mx-0 md:mx-4 md:max-w-5xl flex flex-col"
+        className="relative w-full flex flex-col"
         style={{ maxHeight: "100vh", height: "100vh" }}
         initial={{ scale: 0.93, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -169,7 +169,7 @@ function Lightbox({ project, onClose }) {
         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Image container */}
+        {/* Image container — full screen minus info bar */}
         <div
           className="relative overflow-hidden flex items-center justify-center flex-1"
           style={{ background: "#000" }}
@@ -179,16 +179,16 @@ function Lightbox({ project, onClose }) {
             src={currentSrc}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ filter: "blur(24px) brightness(0.35) saturate(0.5)", transform: "scale(1.1)" }}
+            style={{ filter: "blur(32px) brightness(0.3) saturate(0.4)", transform: "scale(1.15)" }}
           />
-          {/* Main image */}
+          {/* Main image — maximised */}
           <AnimatePresence mode="wait">
             <motion.img
               key={idx}
               src={currentSrc}
               alt={project.title}
-              className="relative z-10 max-w-full max-h-full object-contain"
-              style={{ maxHeight: "calc(100vh - 120px)" }}
+              className="relative z-10 object-contain"
+              style={{ maxWidth: "100%", maxHeight: "calc(100vh - 90px)", width: "auto", height: "auto" }}
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
@@ -200,12 +200,12 @@ function Lightbox({ project, onClose }) {
           {total > 1 && (
             <>
               <button
-                className="absolute left-3 z-20 w-9 h-9 flex items-center justify-center font-bold text-white"
+                className="absolute left-3 z-20 w-10 h-10 flex items-center justify-center font-bold text-white text-lg"
                 style={{ background: "rgba(212,43,10,0.85)" }}
                 onClick={() => setIdx((i) => (i - 1 + total) % total)}
               >←</button>
               <button
-                className="absolute right-3 z-20 w-9 h-9 flex items-center justify-center font-bold text-white"
+                className="absolute right-3 z-20 w-10 h-10 flex items-center justify-center font-bold text-white text-lg"
                 style={{ background: "rgba(212,43,10,0.85)" }}
                 onClick={() => setIdx((i) => (i + 1) % total)}
               >→</button>
@@ -214,7 +214,7 @@ function Lightbox({ project, onClose }) {
 
           {/* Close */}
           <button
-            className="absolute top-3 right-3 z-20 w-9 h-9 flex items-center justify-center text-white font-bold"
+            className="absolute top-3 right-3 z-20 w-10 h-10 flex items-center justify-center text-white font-bold text-lg"
             style={{ background: "rgba(0,0,0,0.7)", border: "1px solid rgba(255,255,255,0.15)" }}
             onClick={onClose}
           >✕</button>
@@ -269,7 +269,7 @@ function Nav({ active, go }) {
       <motion.nav
         className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-10"
         style={{
-          height: 72,
+          height: 88,
           background: scrolled || menuOpen ? "rgba(14,14,14,0.97)" : "transparent",
           backdropFilter: scrolled || menuOpen ? "blur(14px)" : "none",
           borderBottom: scrolled && !menuOpen ? "1px solid rgba(212,43,10,0.2)" : "none",
@@ -280,15 +280,15 @@ function Nav({ active, go }) {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         {/* Logo + wordmark */}
-        <button onClick={() => handleGo("home")} className="flex items-center gap-3">
+        <button onClick={() => handleGo("home")} className="flex items-center gap-4">
           <img
             src={IMG.logo}
             alt="SJB"
             className="rounded-full object-cover flex-shrink-0"
-            style={{ width: 52, height: 52, boxShadow: `0 0 0 2px rgba(212,43,10,0.6)` }}
+            style={{ width: 72, height: 72, boxShadow: `0 0 0 2px rgba(212,43,10,0.6)` }}
           />
           <span className="font-black text-white uppercase"
-            style={{ fontFamily: "'Rajdhani',sans-serif", fontSize: "clamp(0.85rem,2.5vw,1.2rem)", letterSpacing: "0.14em", lineHeight: 1.1 }}>
+            style={{ fontFamily: "'Rajdhani',sans-serif", fontSize: "clamp(1rem,2.8vw,1.5rem)", letterSpacing: "0.14em", lineHeight: 1.1 }}>
             Superfast<br />Jelly Bear
           </span>
         </button>
@@ -337,7 +337,7 @@ function Nav({ active, go }) {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed top-[72px] left-0 right-0 z-40 md:hidden flex flex-col"
+            className="fixed top-[88px] left-0 right-0 z-40 md:hidden flex flex-col"
             style={{ background: "rgba(14,14,14,0.98)", borderBottom: `2px solid ${C.red}` }}
             initial={{ opacity: 0, y: -16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -371,17 +371,58 @@ function Hero({ go }) {
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 600], [0, 160]);
   const fade = useTransform(scrollY, [0, 400], [1, 0]);
+  const [muted, setMuted] = useState(true);
+  const videoRef = useRef(null);
+
+  const toggleSound = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !muted;
+      setMuted(!muted);
+    }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: C.dark }}>
       <motion.div className="absolute inset-0" style={{ y: bgY }}>
-        <img src={IMG.hero_bg} alt="" className="w-full h-full object-cover"
-          style={{ filter: "brightness(0.35) saturate(0.8)" }} />
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.4) saturate(0.8)" }}
+        >
+          <source src="https://res.cloudinary.com/dwsm6vx7d/video/upload/v1781859211/TeaserSpeedster_ypzhax.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0"
           style={{ background: "linear-gradient(to right, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0.6) 55%, rgba(14,14,14,0.15) 100%)" }} />
         <div className="absolute inset-0"
           style={{ background: "linear-gradient(to top, rgba(14,14,14,1) 0%, transparent 40%)" }} />
       </motion.div>
+
+      {/* Sound toggle button */}
+      <motion.button
+        onClick={toggleSound}
+        className="absolute bottom-6 right-6 z-20 flex items-center gap-2 px-4 py-2"
+        style={{
+          background: "rgba(0,0,0,0.55)",
+          border: `1px solid ${muted ? "rgba(255,255,255,0.15)" : C.red}`,
+          color: muted ? C.muted : C.white,
+          fontFamily: "'Rajdhani',sans-serif",
+          fontSize: "0.7rem",
+          letterSpacing: "0.2em",
+          fontWeight: 700,
+          textTransform: "uppercase",
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        whileHover={{ borderColor: C.red, color: C.white }}
+      >
+        <span style={{ fontSize: "1rem" }}>{muted ? "🔇" : "🔊"}</span>
+        {muted ? "Sound Off" : "Sound On"}
+      </motion.button>
 
       <motion.div className="relative z-10 px-6 md:px-20 max-w-4xl w-full pt-24 pb-16" style={{ opacity: fade }}>
         <motion.div className="flex items-center gap-3 mb-6 md:mb-8"

@@ -391,14 +391,15 @@ function Hero({ go }) {
           muted
           playsInline
           className="w-full h-full object-cover"
-          style={{ filter: "brightness(0.4) saturate(0.8)" }}
         >
           <source src="https://res.cloudinary.com/dwsm6vx7d/video/upload/v1781859211/TeaserSpeedster_ypzhax.mp4" type="video/mp4" />
         </video>
+        {/* Gradient left — text readability */}
         <div className="absolute inset-0"
-          style={{ background: "linear-gradient(to right, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0.6) 55%, rgba(14,14,14,0.15) 100%)" }} />
+          style={{ background: "linear-gradient(to right, rgba(14,14,14,0.92) 0%, rgba(14,14,14,0.75) 35%, rgba(14,14,14,0.3) 60%, rgba(14,14,14,0.0) 100%)" }} />
+        {/* Gradient bottom — section transition */}
         <div className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(14,14,14,1) 0%, transparent 40%)" }} />
+          style={{ background: "linear-gradient(to top, rgba(14,14,14,1) 0%, transparent 30%)" }} />
       </motion.div>
 
       {/* Sound toggle button */}

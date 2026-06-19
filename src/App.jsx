@@ -171,24 +171,28 @@ function Lightbox({ project, onClose }) {
       >
         {/* Image container — full screen minus info bar */}
         <div
-          className="relative overflow-hidden flex items-center justify-center flex-1"
-          style={{ background: "#000" }}
+          className="relative flex items-center justify-center flex-1"
+          style={{ background: "#000", overflow: "hidden" }}
         >
-          {/* Blurred bg */}
+          {/* Blurred bg — fills any letterbox gaps */}
           <img
             src={currentSrc}
             alt=""
             className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: "blur(32px) brightness(0.3) saturate(0.4)", transform: "scale(1.15)" }}
           />
-          {/* Main image — maximised */}
+          {/* Main image — truly maximised, fills all available space */}
           <AnimatePresence mode="wait">
             <motion.img
               key={idx}
               src={currentSrc}
               alt={project.title}
-              className="relative z-10 object-contain"
-              style={{ maxWidth: "100%", maxHeight: "calc(100vh - 90px)", width: "auto", height: "auto" }}
+              className="relative z-10"
+              style={{
+                width: "100%",
+                height: "calc(100vh - 80px)",
+                objectFit: "contain",
+              }}
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}

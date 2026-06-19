@@ -545,8 +545,8 @@ function ServiceCard({ s, i }) {
               className="absolute inset-0 w-full h-full object-cover"
               animate={{
                 filter: hov
-                  ? "brightness(0.88) saturate(1.15) contrast(1.05)"
-                  : "brightness(0.4) saturate(0.4)",
+                  ? "brightness(0.9) saturate(1.1)"
+                  : "brightness(0.65) saturate(0.75)",
                 scale: hov ? 1.06 : 1,
               }}
               initial={{ opacity: 0 }}

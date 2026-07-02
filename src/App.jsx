@@ -263,16 +263,7 @@ const PROJECTS = [
     desc: "Trendboards and CMF exploration — from persona and mood to a realistic colour, material and finish proposal applied to a fixed automotive interior. A first-phase exploration translating cultural signals into tangible surface decisions.",
     cloudinary: true,
   },
-  {
-    title: "K7 Van — Design and Hero Visuals",
-    category: "Design Exploration",
-    year: "2025",
-    coverImg: "k7van",
-    images: [],
-    desc: "Independent concept study. Design exploration and hero visuals for the K7 Van — an urban electric utility vehicle concept combining function, identity and cinematic presence.",
-    cloudinary: false,
-    comingSoon: true,
-  },,
+
   {
     title: "Freework",
     category: "Ongoing",
@@ -290,16 +281,7 @@ const PROJECTS = [
     cloudinary: true,
     freework: true,
   },
-  {
-    title: "Adidas × Mobility — Design, Hero Visuals and Video",
-    category: "Concept Imagery",
-    year: "2024",
-    coverImg: "adidas",
-    images: [],
-    desc: "Independent concept study. Cross-brand design exploration — Adidas design language and identity translated into a micro-mobility vehicle concept, from design direction to cinematic hero shots and motion content.",
-    cloudinary: false,
-    comingSoon: true,
-  },
+
   {
     title: "Honda Monkey Me — Design and Hero Visuals",
     category: "Design Exploration",
@@ -392,46 +374,6 @@ const PROJECTS = [
     ],
     desc: "Independent concept study. Press-style hero visuals for the 77R — cinematic staging, dramatic lighting and atmospheric environments for a compact performance car concept.",
     cloudinary: true,
-  },
-    {
-    title: "Coming Soon",
-    category: "New Project",
-    year: "2025",
-    coverImg: null,
-    images: [],
-    desc: "Next project in the works.",
-    cloudinary: false,
-    comingSoon: true,
-  },
-  {
-    title: "Coming Soon",
-    category: "New Project",
-    year: "2025",
-    coverImg: null,
-    images: [],
-    desc: "Next project in the works.",
-    cloudinary: false,
-    comingSoon: true,
-  },
-  {
-    title: "Coming Soon",
-    category: "New Project",
-    year: "2025",
-    coverImg: null,
-    images: [],
-    desc: "Next project in the works.",
-    cloudinary: false,
-    comingSoon: true,
-  },
-  {
-    title: "Coming Soon",
-    category: "New Project",
-    year: "2025",
-    coverImg: null,
-    images: [],
-    desc: "Next project in the works.",
-    cloudinary: false,
-    comingSoon: true,
   },
 ];
 
@@ -808,8 +750,7 @@ function Hero({ go }) {
         <motion.p className="text-sm md:text-lg leading-relaxed max-w-md mb-8 md:mb-10"
           style={{ color: "#aaa", fontFamily: "Inter,sans-serif" }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.6 }}>
-          Design exploration, concept imagery, press-style product shots, and motion.
-          Built fast. Without the layers.
+          Product and mobility concept design, hero visuals and motion — from first sketch to final frame.
         </motion.p>
 
         <motion.div className="flex flex-col sm:flex-row gap-3 md:gap-4"
@@ -1325,7 +1266,7 @@ function About() {
         {/* Logo centré en bas */}
         <FadeUp delay={0.4} className="flex justify-center mt-16 md:mt-20">
           <img src={IMG.logo} alt="Superfast Jelly Bear"
-            style={{ width: 100, height: 100, objectFit: "contain", opacity: 0.45 }} />
+            style={{ width: 220, height: 220, objectFit: "contain", opacity: 1 }} />
         </FadeUp>
 
       </div>

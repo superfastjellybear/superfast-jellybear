@@ -1295,18 +1295,22 @@ function Contact() {
     setError(false);
     setSending(true);
     try {
-      const body = [
-        `Name: ${form.name}`,
-        `Email: ${form.email}`,
-        `Service: ${form.service || " "}`,
-        ``,
-        form.message,
-      ].join("\n");
-      window.location.href = `mailto:superfastjellybear@gmail.com?subject=New%20inquiry%20from%20${encodeURIComponent(form.name)}&body=${encodeURIComponent(body)}`;
-      setTimeout(() => { setSent(true); setSending(false); }, 800);
+      const data = new FormData();
+      data.append("form-name", "contact");
+      data.append("name", form.name);
+      data.append("email", form.email);
+      data.append("service", form.service || "");
+      data.append("message", form.message);
+      const res = await fetch("/", { method: "POST", body: data });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError("Something went wrong. Please email us directly.");
+      }
     } catch (e) {
-      setSending(false);
       setError("Something went wrong. Please email us directly.");
+    } finally {
+      setSending(false);
     }
   };
 
@@ -1366,13 +1370,13 @@ function Contact() {
                     clipPath: "polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%)" }}
                   whileHover={!sending ? { background: C.redGlow, scale: 1.01 } : {}}
                   whileTap={!sending ? { scale: 0.98 } : {}}>
-                  {sending ? "Opening mail client…" : "Send Message →"}
+                  {sending ? "Sending…" : "Send Message →"}
                 </motion.button>
                 <p className="text-center text-xs mt-2" style={{ color: "rgba(255,255,255,0.3)", fontFamily: "Inter,sans-serif" }}>
                   Or reach us directly at{" "}
-                  <a href="mailto:superfastjellybear@gmail.com"
+                  <a href="mailto:hit@superfastjellybear.com"
                     style={{ color: C.red, textDecoration: "none" }}>
-                    superfastjellybear@gmail.com
+                    hit@superfastjellybear.com
                   </a>
                 </p>
               </div>

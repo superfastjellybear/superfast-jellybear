@@ -29,6 +29,13 @@
     <meta name="twitter:image" content="https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1200,h_630,c_fill,g_auto,q_auto:best,f_auto/v1782077005/Orkan-Beauty_3_kjie5a.png" />
   </head>
   <body>
+    <!-- Netlify Forms detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="service" />
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

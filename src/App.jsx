@@ -223,7 +223,7 @@ const PROJECTS = [
       "https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782076310/07-Cine_v03j5v.png",
       "https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782075920/08-Cine_agkrai.png",
       "https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782075923/09-Cine_bfaczk.png",
-      "video::https://res.cloudinary.com/dwsm6vx7d/video/upload/v1781859211/TeaserSpeedster_ypzhax.mp4::https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782075923/09-Cine_bfaczk.png",
+      "video::/Video/Orkan.mp4::https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782075923/09-Cine_bfaczk.png",
     ],
     desc: "Independent concept study. Cinematic series for the Volvo Orkan electric roadster. Desert light, dust and speed — from atmospheric stills to the final teaser film.",
     cloudinary: true,
@@ -234,7 +234,7 @@ const PROJECTS = [
     year: "2025",
     coverImg: "https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782403191/Hinomaru_3_sea4ic.png",
     images: [
-      "video::https://res.cloudinary.com/dwsm6vx7d/video/upload/v1782403246/hinomaru_wh3eya.mp4::https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782403191/Hinomaru_3_sea4ic.png",
+      "video::/Video/Hinomaru.mp4::https://res.cloudinary.com/dwsm6vx7d/image/upload/w_1600,c_scale,q_auto:best,f_auto/v1782403191/Hinomaru_3_sea4ic.png",
     ],
     desc: "Quick design exploration — from hand sketch to teaser clip. A condensed workflow sequence for the Hinomaru motorcycle concept, moving through sketch, render and motion in a single film.",
     cloudinary: true,
@@ -733,7 +733,7 @@ function Hero({ go }) {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dwsm6vx7d/video/upload/v1781859211/TeaserSpeedster_ypzhax.mp4" type="video/mp4" />
+          <source src="/Video/Orkan.mp4" type="video/mp4" />
         </video>
         {/* Gradient left — text readability */}
         <div className="absolute inset-0"

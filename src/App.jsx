@@ -171,6 +171,10 @@ const PROJECTS = [
     year: "2025",
     coverImg: "/Images/VolvoConceptDesign_2026/ORKAN-1_o77q2i.webp",
     images: [
+      "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-1.webp",
+      "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-2.webp",
+      "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-3.webp",
+      "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-4.webp",
       "/Images/VolvoConceptDesign_2026/ORKAN-1_o77q2i.webp",
       "/Images/VolvoConceptDesign_2026/ORKAN-2_sb0nml.webp",
       "/Images/VolvoConceptDesign_2026/ORKAN-3_ibcd7m.webp",

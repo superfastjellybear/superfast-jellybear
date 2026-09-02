@@ -1331,8 +1331,6 @@ function ThreeDLead() {
     <section id="threedlead" className="relative pb-16 md:pb-28 px-4 md:px-16" style={{ background: C.dark }}>
       <div className="max-w-screen-2xl mx-auto">
         <FadeUp className="mb-16">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: C.amber, fontFamily: "'Rajdhani',sans-serif", letterSpacing: "0.3em" }}>Background</p>
           <h2 className="font-black uppercase"
             style={{ fontFamily: "'Rajdhani',sans-serif", fontSize: "clamp(2.5rem,5vw,4.5rem)", color: C.white }}>
             3D Work &amp; Project Lead

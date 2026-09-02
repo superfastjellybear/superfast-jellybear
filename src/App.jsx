@@ -379,39 +379,41 @@ const PROJECTS = [
     desc: "Independent concept study. Press-style hero visuals for the 77R — cinematic staging, dramatic lighting and atmospheric environments for a compact performance car concept.",
     cloudinary: true,
   },
-  {
-    title: "25 Years in Advanced Design",
-    category: "3D Modelling & Team Lead",
-    year: "2000 — 2025",
-    coverImg: "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_1_jfdjmk.webp",
-    images: [
-      "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_1_jfdjmk.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_2_dqiauu.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LF-30_1_jxd4ud.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LF-30_2_po6tvj.webp",
-      "/Images/3DModeling-3DProjectLead/BLACKTRACK-BT-05_1_nhwhmr.webp",
-      "/Images/3DModeling-3DProjectLead/BLACKTRACK-BT-05_2_dbbhp1.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_2_ewiext.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_1_c61tk5.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_3_twekhh.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-Palette_hckmdx.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-CARE_2_uuxnq5.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-E-CARE_1_zubkar.webp",
-      "/Images/3DModeling-3DProjectLead/TOYOTA-MICRO-BOX_nwhkec.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-UX-CONCEPT_1_hogmbd.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-UX-CONCEPT_2_kpwy5t.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-Skyjet-Valerian-1_nwdfyf.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-EXTER-2_v7tsyj.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-EXTER_za09me.webp",
-      "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-INTER_mhirwh.webp",
-      "/Images/3DModeling-3DProjectLead/EQUUS-BASS-770_1_heynev.webp",
-      "/Images/3DModeling-3DProjectLead/ADVANCED-CONFIDENTIAL-ONES_zwipzn.webp",
-      "/Images/3DModeling-3DProjectLead/AndMuchMore_tiefxk.webp",
-    ],
-    desc: "3D styling, production modelling and 3D team lead — across Lexus, Toyota, Blacktrack and more. A selection of publicly released concept cars and advanced design studies.",
-    cloudinary: true,
-  },
 ];
+
+// ── 3D Modelling & Team Lead — separate dataset ───────────────────────────────
+const PROJECT_3D = {
+  title: "25 Years in Advanced Design",
+  category: "3D Modelling & Team Lead",
+  year: "2000 — 2025",
+  coverImg: "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_1_jfdjmk.webp",
+  images: [
+    "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_1_jfdjmk.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LS-MICRO-CONCEPT_2_dqiauu.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LF-30_1_jxd4ud.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LF-30_2_po6tvj.webp",
+    "/Images/3DModeling-3DProjectLead/BLACKTRACK-BT-05_1_nhwhmr.webp",
+    "/Images/3DModeling-3DProjectLead/BLACKTRACK-BT-05_2_dbbhp1.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_2_ewiext.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_1_c61tk5.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-RACER_3_twekhh.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-Palette_hckmdx.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-CARE_2_uuxnq5.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-E-CARE_1_zubkar.webp",
+    "/Images/3DModeling-3DProjectLead/TOYOTA-MICRO-BOX_nwhkec.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-UX-CONCEPT_1_hogmbd.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-UX-CONCEPT_2_kpwy5t.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-Skyjet-Valerian-1_nwdfyf.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-EXTER-2_v7tsyj.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-EXTER_za09me.webp",
+    "/Images/3DModeling-3DProjectLead/LEXUS-LFSA-INTER_mhirwh.webp",
+    "/Images/3DModeling-3DProjectLead/EQUUS-BASS-770_1_heynev.webp",
+    "/Images/3DModeling-3DProjectLead/ADVANCED-CONFIDENTIAL-ONES_zwipzn.webp",
+    "/Images/3DModeling-3DProjectLead/AndMuchMore_tiefxk.webp",
+  ],
+  desc: "3D styling, production modelling and 3D team lead — across Lexus, Toyota, Blacktrack and more. A selection of publicly released concept cars and advanced design studies.",
+  cloudinary: true,
+};
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function FadeUp({ children, delay = 0, className = "" }) {
@@ -1115,10 +1117,101 @@ function FullBleedSplit() {
   );
 }
 
+// ── Project card ──────────────────────────────────────────────────────────────
+function ProjectCard({ p, i, hov, setHov, setOpen }) {
+  return (
+    <FadeUp key={`${p.title}-${i}`} delay={(i % 6) * 0.07}>
+      <motion.div
+        className="relative overflow-hidden cursor-pointer"
+        style={{ aspectRatio: "4/3", background: C.gray }}
+        onHoverStart={() => setHov(i)}
+        onHoverEnd={() => setHov(null)}
+        onClick={() => !p.comingSoon && setOpen(p)}
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.35 }}
+      >
+        {(p.cloudinary ? p.coverImg : IMG[p.coverImg]) ? (
+          <motion.img
+            src={p.cloudinary ? p.coverImg : IMG[p.coverImg]}
+            alt={p.title}
+            className="w-full h-full object-cover"
+            animate={{
+              scale: hov === i ? 1.08 : 1,
+              filter: hov === i
+                ? "brightness(0.9) saturate(1.2) contrast(1.05)"
+                : "brightness(0.45) saturate(0.5)",
+            }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+          />
+        ) : (
+          <div className="w-full h-full" style={{ background: C.darkMid }} />
+        )}
+
+        <div className="absolute inset-0"
+          style={{ background: "linear-gradient(to top, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0.1) 55%, transparent 100%)" }} />
+
+        <motion.div
+          className="absolute inset-0"
+          style={{ background: `linear-gradient(to top, rgba(212,43,10,0.18) 0%, transparent 60%)` }}
+          animate={{ opacity: hov === i ? 1 : 0 }}
+          transition={{ duration: 0.3 }}
+        />
+
+        <div className="absolute bottom-0 left-0 right-0 p-5">
+          <motion.div className="h-px mb-3" style={{ background: C.red }}
+            animate={{ width: hov === i ? 48 : 20 }} transition={{ duration: 0.3 }} />
+          <p className="text-xs uppercase tracking-widest mb-1"
+            style={{ color: hov === i ? C.amber : C.muted, fontFamily: "'Rajdhani',sans-serif", transition: "color 0.3s" }}>
+            {p.category} · {p.year}
+          </p>
+          <h3 className="font-black uppercase text-xl text-white"
+            style={{ fontFamily: "'Rajdhani',sans-serif" }}>{p.title}</h3>
+        </div>
+
+        <AnimatePresence>
+          {hov === i && (
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+            >
+              <motion.span
+                className="font-black uppercase text-white select-none"
+                style={{
+                  fontFamily: "'Rajdhani',sans-serif",
+                  fontSize: "clamp(5rem, 14vw, 9rem)",
+                  letterSpacing: "0.05em",
+                  opacity: 0.18,
+                  lineHeight: 1,
+                  whiteSpace: "nowrap",
+                }}
+                initial={{ scale: 0.75, opacity: 0 }}
+                animate={{ scale: 1, opacity: 0.18 }}
+                exit={{ scale: 1.1, opacity: 0 }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+              >
+                {p.comingSoon ? "SOON" : "VIEW"}
+              </motion.span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    </FadeUp>
+  );
+}
+
 // ── Projects grid + lightbox ──────────────────────────────────────────────────
 function Projects() {
   const [hov, setHov] = useState(null);
-  const [open, setOpen] = useState(null); // project object or null
+  const [open, setOpen] = useState(null);
+  const [expanded, setExpanded] = useState(false);
+
+  const VISIBLE = 6;
+  const visible = PROJECTS.slice(0, VISIBLE);
+  const hidden = PROJECTS.slice(VISIBLE);
+  const hasMore = hidden.length > 0;
 
   return (
     <section id="projects" className="relative py-16 md:py-28 px-4 md:px-16" style={{ background: C.dark }}>
@@ -1131,96 +1224,203 @@ function Projects() {
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {PROJECTS.map((p, i) => (
-            <FadeUp key={`${p.title}-${i}`} delay={i * 0.07}>
+          {/* 6 premiers projets */}
+          {visible.map((p, i) => (
+            <ProjectCard key={`${p.title}-${i}`} p={p} i={i} hov={hov} setHov={setHov} setOpen={setOpen} />
+          ))}
+
+          {/* Carte Show More — même cellule que les projets */}
+          {hasMore && !expanded && (
+            <FadeUp delay={0.35}>
               <motion.div
-                className="relative overflow-hidden cursor-pointer"
-                style={{ aspectRatio: "4/3", background: C.gray }}
-                onHoverStart={() => setHov(i)}
-                onHoverEnd={() => setHov(null)}
-                onClick={() => !p.comingSoon && setOpen(p)}
-                whileHover={{ scale: 1.02 }}
+                className="relative overflow-hidden cursor-pointer flex flex-col items-center justify-center"
+                style={{ aspectRatio: "4/3", background: C.darkMid, border: `1px solid rgba(212,43,10,0.25)` }}
+                onClick={() => setExpanded(true)}
+                whileHover={{ scale: 1.02, borderColor: C.red }}
                 transition={{ duration: 0.35 }}
               >
-                {/* Image — highlight on hover: scale + brightness + saturation */}
-                {(p.cloudinary ? p.coverImg : IMG[p.coverImg]) ? (
-                  <motion.img
-                    src={p.cloudinary ? p.coverImg : IMG[p.coverImg]}
-                    alt={p.title}
-                    className="w-full h-full object-cover"
-                    animate={{
-                      scale: hov === i ? 1.08 : 1,
-                      filter: hov === i
-                        ? "brightness(0.9) saturate(1.2) contrast(1.05)"
-                        : "brightness(0.45) saturate(0.5)",
-                    }}
-                    transition={{ duration: 0.45, ease: "easeOut" }}
-                  />
-                ) : (
-                  <div className="w-full h-full" style={{ background: C.darkMid }} />
-                )}
-
-                {/* Base gradient */}
-                <div className="absolute inset-0"
-                  style={{ background: "linear-gradient(to top, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0.1) 55%, transparent 100%)" }} />
-
-                {/* Red overlay flash on hover */}
+                {/* Croix / plus */}
                 <motion.div
-                  className="absolute inset-0"
-                  style={{ background: `linear-gradient(to top, rgba(212,43,10,0.18) 0%, transparent 60%)` }}
-                  animate={{ opacity: hov === i ? 1 : 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-
-                {/* Info */}
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <motion.div className="h-px mb-3" style={{ background: C.red }}
-                    animate={{ width: hov === i ? 48 : 20 }} transition={{ duration: 0.3 }} />
-                  <p className="text-xs uppercase tracking-widest mb-1"
-                    style={{ color: hov === i ? C.amber : C.muted, fontFamily: "'Rajdhani',sans-serif", transition: "color 0.3s" }}>
-                    {p.category} · {p.year}
-                  </p>
-                  <h3 className="font-black uppercase text-xl text-white"
-                    style={{ fontFamily: "'Rajdhani',sans-serif" }}>{p.title}</h3>
-                </div>
-
-                {/* VIEW oversized centré */}
-                <AnimatePresence>
-                  {hov === i && (
-                    <motion.div
-                      className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <motion.span
-                        className="font-black uppercase text-white select-none"
-                        style={{
-                          fontFamily: "'Rajdhani',sans-serif",
-                          fontSize: "clamp(5rem, 14vw, 9rem)",
-                          letterSpacing: "0.05em",
-                          opacity: 0.18,
-                          lineHeight: 1,
-                          whiteSpace: "nowrap",
-                        }}
-                        initial={{ scale: 0.75, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 0.18 }}
-                        exit={{ scale: 1.1, opacity: 0 }}
-                        transition={{ duration: 0.35, ease: "easeOut" }}
-                      >
-                        {p.comingSoon ? "SOON" : "VIEW"}
-                      </motion.span>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                  className="flex items-center justify-center mb-5"
+                  style={{ width: 52, height: 52, border: `1px solid ${C.red}` }}
+                  whileHover={{ backgroundColor: C.red }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <line x1="10" y1="2" x2="10" y2="18" stroke="white" strokeWidth="1.5"/>
+                    <line x1="2" y1="10" x2="18" y2="10" stroke="white" strokeWidth="1.5"/>
+                  </svg>
+                </motion.div>
+                <p className="text-xs font-bold uppercase tracking-widest mb-1"
+                  style={{ color: C.muted, fontFamily: "'Rajdhani',sans-serif", letterSpacing: "0.3em" }}>
+                  {hidden.length} more project{hidden.length > 1 ? "s" : ""}
+                </p>
+                <p className="font-black uppercase text-lg text-white"
+                  style={{ fontFamily: "'Rajdhani',sans-serif" }}>View All</p>
               </motion.div>
             </FadeUp>
-          ))}
+          )}
+
+          {/* Projets cachés — animés à l'apparition */}
+          <AnimatePresence>
+            {expanded && hidden.map((p, i) => (
+              <motion.div
+                key={`${p.title}-hidden-${i}`}
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <ProjectCard p={p} i={VISIBLE + i} hov={hov} setHov={setHov} setOpen={setOpen} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+
+          {/* Carte Show Less — apparaît après les projets déployés */}
+          <AnimatePresence>
+            {expanded && (
+              <motion.div
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 32 }}
+                transition={{ duration: 0.4, delay: hidden.length * 0.07, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <motion.div
+                  className="relative overflow-hidden cursor-pointer flex flex-col items-center justify-center"
+                  style={{ aspectRatio: "4/3", background: C.darkMid, border: `1px solid rgba(212,43,10,0.25)` }}
+                  onClick={() => setExpanded(false)}
+                  whileHover={{ scale: 1.02, borderColor: C.red }}
+                  transition={{ duration: 0.35 }}
+                >
+                  <motion.div
+                    className="flex items-center justify-center mb-5"
+                    style={{ width: 52, height: 52, border: `1px solid ${C.red}` }}
+                    whileHover={{ backgroundColor: C.red }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <line x1="2" y1="10" x2="18" y2="10" stroke="white" strokeWidth="1.5"/>
+                    </svg>
+                  </motion.div>
+                  <p className="text-xs font-bold uppercase tracking-widest mb-1"
+                    style={{ color: C.muted, fontFamily: "'Rajdhani',sans-serif", letterSpacing: "0.3em" }}>
+                    Collapse
+                  </p>
+                  <p className="font-black uppercase text-lg text-white"
+                    style={{ fontFamily: "'Rajdhani',sans-serif" }}>Show Less</p>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
-      {/* Lightbox */}
+      <AnimatePresence>
+        {open && <Lightbox project={open} onClose={() => setOpen(null)} />}
+      </AnimatePresence>
+    </section>
+  );
+}
+
+// ── 3D Modelling & Team Lead section ─────────────────────────────────────────
+function ThreeDLead() {
+  const [hov, setHov] = useState(false);
+  const [open, setOpen] = useState(null);
+  const p = PROJECT_3D;
+
+  return (
+    <section id="threedlead" className="relative pb-16 md:pb-28 px-4 md:px-16" style={{ background: C.dark }}>
+      <div className="max-w-screen-2xl mx-auto">
+        <FadeUp className="mb-16">
+          <p className="text-xs font-bold uppercase tracking-widest mb-3"
+            style={{ color: C.amber, fontFamily: "'Rajdhani',sans-serif", letterSpacing: "0.3em" }}>Background</p>
+          <h2 className="font-black uppercase"
+            style={{ fontFamily: "'Rajdhani',sans-serif", fontSize: "clamp(2.5rem,5vw,4.5rem)", color: C.white }}>
+            3D Work &amp; Project Lead
+          </h2>
+        </FadeUp>
+
+        {/* Carte centrée — même largeur qu'une colonne de la grille Projects sur lg (1/3) */}
+        <div className="flex justify-center">
+          <div className="w-full md:w-1/2 lg:w-1/3">
+          <FadeUp>
+            <motion.div
+              className="relative overflow-hidden cursor-pointer"
+              style={{ aspectRatio: "4/3", background: C.gray }}
+              onHoverStart={() => setHov(true)}
+              onHoverEnd={() => setHov(false)}
+              onClick={() => setOpen(p)}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.35 }}
+            >
+              <motion.img
+                src={p.coverImg}
+                alt={p.title}
+                className="w-full h-full object-cover"
+                animate={{
+                  scale: hov ? 1.08 : 1,
+                  filter: hov
+                    ? "brightness(0.9) saturate(1.2) contrast(1.05)"
+                    : "brightness(0.45) saturate(0.5)",
+                }}
+                transition={{ duration: 0.45, ease: "easeOut" }}
+              />
+
+              <div className="absolute inset-0"
+                style={{ background: "linear-gradient(to top, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0.1) 55%, transparent 100%)" }} />
+
+              <motion.div
+                className="absolute inset-0"
+                style={{ background: `linear-gradient(to top, rgba(212,43,10,0.18) 0%, transparent 60%)` }}
+                animate={{ opacity: hov ? 1 : 0 }}
+                transition={{ duration: 0.3 }}
+              />
+
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <motion.div className="h-px mb-3" style={{ background: C.red }}
+                  animate={{ width: hov ? 48 : 20 }} transition={{ duration: 0.3 }} />
+                <p className="text-xs uppercase tracking-widest mb-1"
+                  style={{ color: hov ? C.amber : C.muted, fontFamily: "'Rajdhani',sans-serif", transition: "color 0.3s" }}>
+                  {p.category} · {p.year}
+                </p>
+                <h3 className="font-black uppercase text-xl text-white"
+                  style={{ fontFamily: "'Rajdhani',sans-serif" }}>{p.title}</h3>
+              </div>
+
+              <AnimatePresence>
+                {hov && (
+                  <motion.div
+                    className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <motion.span
+                      className="font-black uppercase text-white select-none"
+                      style={{
+                        fontFamily: "'Rajdhani',sans-serif",
+                        fontSize: "clamp(5rem, 14vw, 9rem)",
+                        letterSpacing: "0.05em",
+                        opacity: 0.18,
+                        lineHeight: 1,
+                        whiteSpace: "nowrap",
+                      }}
+                      initial={{ scale: 0.75, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 0.18 }}
+                      exit={{ scale: 1.1, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: "easeOut" }}
+                    >
+                      VIEW
+                    </motion.span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          </FadeUp>
+          </div>
+        </div>
+      </div>
+
       <AnimatePresence>
         {open && <Lightbox project={open} onClose={() => setOpen(null)} />}
       </AnimatePresence>
@@ -1484,6 +1684,7 @@ export default function App() {
       <Services />
       <FullBleedSplit />
       <Projects />
+      <ThreeDLead />
       <About />
       <Contact />
       <Footer go={go} />

@@ -169,7 +169,7 @@ const PROJECTS = [
     title: "Volvo Orkan — Design",
     category: "Design Exploration",
     year: "2025",
-    coverImg: "/Images/VolvoConceptDesign_2026/ORKAN-1_o77q2i.webp",
+    coverImg: "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-3.webp",
     images: [
       "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-1.webp",
       "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-2.webp",

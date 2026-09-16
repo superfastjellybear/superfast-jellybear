@@ -166,6 +166,24 @@ const SERVICES = [
 // To add a project later: add an entry here + add images to IMG block above
 const PROJECTS = [
   {
+    title: "Toyota Arashi",
+    category: "Design Exploration",
+    year: "2026",
+    coverImg: "/Images/ToyotaArashi_2026/Arashi-Hero-1.webp",
+    images: [
+      "/Images/ToyotaArashi_2026/Arashi-Sketch-1.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Sketch-2.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Studio-1.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Studio-2.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Studio-3.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Studio-4.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Studio-5.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Hero-1.webp",
+      "/Images/ToyotaArashi_2026/Arashi-Hero-2.webp",
+    ],
+    desc: "Toyota Arashi. Personal concept study. Sharp geometry, red and white graphic tension, calligraphy signature from body to tail light. Quick one.",
+  },
+  {
     title: "Volvo Orkan — Design",
     category: "Design Exploration",
     year: "2025",

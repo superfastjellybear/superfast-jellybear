@@ -182,6 +182,7 @@ const PROJECTS = [
       "/Images/ToyotaArashi_2026/Arashi-Hero-2.webp",
     ],
     desc: "Toyota Arashi. Personal concept study. Sharp geometry, red and white graphic tension, calligraphy signature from body to tail light. Quick one.",
+    cloudinary: true,
   },
   {
     title: "Volvo Orkan — Design",

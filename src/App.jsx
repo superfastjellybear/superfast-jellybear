@@ -187,7 +187,7 @@ const PROJECTS = [
   {
     title: "Volvo Orkan — Design",
     category: "Design Exploration",
-    year: "2025",
+    year: "2026",
     coverImg: "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-3.webp",
     images: [
       "/Images/VolvoConceptDesign_2026/ORKAN-Sketch-1.webp",
@@ -209,7 +209,7 @@ const PROJECTS = [
   {
     title: "Volvo Orkan — Hero Visuals",
     category: "Press-Style Product Shots",
-    year: "2025",
+    year: "2026",
     coverImg: "/Images/VolvoConceptHeroes_2026/Orkan-Beauty_1_w6rqt6.webp",
     images: [
       "/Images/VolvoConceptHeroes_2026/Orkan-Beauty_1_w6rqt6.webp",
@@ -234,7 +234,7 @@ const PROJECTS = [
   {
     title: "Volvo Orkan — Cinematic",
     category: "Products in Motion",
-    year: "2025",
+    year: "2026",
     coverImg: "/Images/VolvoConceptCinematic_2026/01-Cine_ynfel7.webp",
     images: [
       "/Images/VolvoConceptCinematic_2026/01-Cine_ynfel7.webp",
@@ -254,7 +254,7 @@ const PROJECTS = [
   {
     title: "Hinomaru — Design Exploration",
     category: "Design Exploration",
-    year: "2025",
+    year: "2026",
     coverImg: "/Images/Hinomaru_2026/Hinomaru_3_sea4ic.webp",
     images: [
       "video::/Video/Hinomaru.mp4::/Images/Hinomaru_2026/Hinomaru_3_sea4ic.webp",
